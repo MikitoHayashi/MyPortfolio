@@ -63,7 +63,7 @@ a {
 *****************************************/
 
 header {
-    padding: 50px 0 60px 0;
+    padding: 50px 0 40px 0;
     text-align: center;
 }
 
@@ -78,6 +78,29 @@ header a.logo span {
     color: #ccc;
 }
 
+nav {
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    width: 160px;
+    line-height: 24px;
+    font-size: 0.8rem;
+    font-weight: 400;;
+    color: #fff;
+}
+
+nav a:nth-child(1) {
+    background: #FFC410;
+}
+nav a:nth-child(2) {
+    background: #45B2C9;
+}
+nav a:nth-child(3) {
+    background: #82027D;
+}
 
 /****************************************
 
