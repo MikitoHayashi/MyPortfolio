@@ -1,0 +1,812 @@
+/****************************************
+
+		基本
+
+*****************************************/
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+section , article , footer , aside { display:block; }
+
+* {
+    margin:0;
+	padding:0;
+	border:none;
+	list-style:none;
+	text-decoration:none;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Noto Sans JP',"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif,"verdana";
+    line-height: 1.7;
+    letter-spacing:0.05em;
+    color: #333;
+}
+
+body {
+	background:#f7f7f7;
+}
+
+main {
+    width: auto;
+    margin: 15px auto 50px auto;
+}
+
+main#index h1,
+main#profile h1,
+span.position {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    padding: 4px 30px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: #eee;
+    font-size: 0.5rem;
+    font-weight: normal;
+    color: #bbb;
+}
+
+a {
+    color: #19448e;
+    text-decoration: none;
+}
+
+.pc {
+    display: block;
+}
+.sp {
+    display: none;
+}
+
+.aright {
+    text-align: right;
+}
+.aleft {
+    text-align: left !important;
+}
+.acenter {
+    text-align:center;
+}
+
+
+/****************************************
+
+		ヘッダー
+
+*****************************************/
+
+header {
+    display: flex;
+    margin: 0;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.07);
+    border-radius: 8px;
+}
+
+header a.logo {
+    display: inline-block;
+    margin: 12px 60px 12px 30px;
+    text-align: center;
+}
+
+header a.logo img {
+    height: 16px;
+}
+
+header a.logo span {
+    display: block;
+    margin: -3px 0 0 0;
+    font-size: 0.5rem;
+    color: #ccc;
+}
+
+header nav {
+    padding: 20px 0 20px 20px;
+    font-size: 0.84rem;
+}
+
+header nav a {
+    margin: 0 30px 0 0;
+    font-weight: bold;
+    color: #333;
+}
+header nav a i {
+    color: #fab001;
+}
+header nav span {
+    font-size: 0.5rem;
+    font-weight: 400;
+    color: #ccc;
+}
+
+
+/****************************************
+
+		INDEX / CATEGORY
+
+*****************************************/
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 1%;
+}
+#posts a {
+    width: 22.7%; /* 100 ÷ 4 = 25% */
+    box-sizing: border-box;
+    height: 200px;
+    margin: 1%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#posts a:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#posts a .thum {
+}
+#posts a .thum img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#posts a .list {
+    padding: 12px 0 0 0;
+}
+#posts a .list strong {
+    font-size: 0.8rem;
+}
+
+#posts span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0.55rem;
+    color: #ccc;
+}
+
+#posts h2 {
+    font-size: 1rem;
+    color: #333;
+}
+
+.noarticles {
+    margin: 100px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+/****************************************
+
+		SINGLE
+
+*****************************************/
+
+/* FRAME */
+main#single {
+    padding: 20px 0;
+    background: #fff;
+    border: 1px solid #f1f3f4;
+    border-radius: 8px;
+}
+
+/* HEADLINE */
+main#single h1 {
+    margin: 10px 0 30px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+main#single h1 span {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #ccc;
+}
+
+/* EYECATCH */
+main#single #eyecatch {
+    width: 800px;
+    margin: auto;
+}
+main#single #eyecatch img {
+    max-width: 100%;
+    margin: 30px 0 0 0;
+    border-radius: 6px;
+}
+
+/* ARTICLE */
+main#single article {
+    margin: 0 40px;
+}
+
+/* HEADLINE */
+main#single h2 {
+    margin: 40px 0 25px 0;
+    padding: 40px 0 0 0;
+    border-top: 1px dotted #ddd;
+    font-size: 1.1rem;
+}
+main#single h2 i {
+    color: #fff;
+    background: #333;
+    border-radius: 30px;
+    width: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+
+main#single h3 {
+    margin: 40px 0 10px 0;
+}
+main#single h3 strong {
+    border-left: 3px solid #ddd;
+    padding: 3px 0 3px 12px;
+}
+
+/* TEXT */
+main#single p {
+    margin: 0 0 25px 0;
+}
+
+/* LIST */
+main#single ul,
+main#single ol {
+    margin: 0 0 25px 20px;
+    padding: 20px 20px 10px 30px;
+    border-radius: 6px;
+    background: #f8f8f8;
+    font-size: 0.92rem;
+}
+main#single li {
+    list-style: disc;
+    margin: 0 0 15px 0;
+}
+
+/* 記事一覧へ */
+main#single #listicle {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+main#single #listicle a {
+    font-weight: bold;
+    color: #333;
+}
+main#single #listicle i {
+    margin: 0 5px 0 0;
+    color: #fab001;
+}
+
+/* 下部ナビ */
+#btmnv {
+    margin: 40px 0 0 0;
+    padding: 40px 0 20px 0;
+    border-top: 1px dotted #ddd;
+    text-align: center;
+    font-size: 0.84rem;
+}
+
+#btmnv a {
+    margin: 0 30px 0 0;
+    font-weight: bold;
+    color: #333;
+}
+#btmnv a i {
+    color: #fab001;
+}
+
+
+/****************************************
+
+		PROFILE
+
+*****************************************/
+
+#profile {
+    width: 50%;
+    margin: 50px auto 30px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #f1f3f4;
+    border-radius: 8px;
+}
+
+#profile h2 {
+    margin: 0 0 15px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#profile #profimg {
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+#profile #profimg img {
+    width: 90px;
+}
+
+#profile #intro {
+    margin: 0 20px 10px 20px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+#profile dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 0.88rem;
+}
+#profile dt,
+#profile dd {
+    display: inline-block;
+    padding: 20px 0;
+    border-bottom: 1px dotted #ddd;
+    vertical-align: top;
+}
+#profile dt {
+    width: 30%;
+    margin: 0 -7px 0 20px;
+}
+#profile dd {
+    width: calc(100% - 36%);
+}
+
+#profile #details dt:last-of-type,
+#profile #details dd:last-of-type {
+    border: none !important;
+}
+
+#profile #details i {
+    color: #000;
+}
+
+#profile .account img {
+    display: inline;
+    height: 26px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+#profile .account a:first-of-type img {
+    height: 20px;
+}
+
+
+/****************************************
+
+		CONTACT
+
+*****************************************/
+
+#contact {
+    display: block;
+    margin: 50px auto;
+}
+#contact .catch  {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.form {
+    width: 70%;
+    margin: 0 auto 60px auto;
+    padding: 40px;
+    background: #fff;
+    border: 1px solid #f1f3f4;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.form dl {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.form dt {
+    width: 30%;
+    padding: 6px 0;
+    font-weight:bold;
+}
+
+.form dd {
+    width: 65%;
+    padding: 0px 10px 20px 10px;
+}
+
+.form dt span {
+    padding: 2px 0;
+    font-size: 14px;
+    color:#19448e;
+}
+
+.form input[type='text'],.form input[type='email'],.form input[type='tel'] {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background: #fafafa;
+    font-size:16px;
+}
+.form textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background: #fafafa;
+    font-size:16px;
+}
+
+.form label {
+    position: relative;
+    top: 7px;
+    cursor: pointer;
+}
+
+.form-actions {
+    margin:0 0 0 0;
+}
+.form .form-actions input {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 0;
+    background:#19448e;
+    border-radius: 3px;
+    border:1px solid #0A6CBF;
+    font-size: 15px;
+    font-weight:bold;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.form .form-actions input:hover {
+    border:1px solid #0A6CBF;
+    background:#fff;
+    color: #0A6CBF;
+}
+
+.wpcf7-list-item-label {
+    position: relative;
+    top: -1px;
+    left: 4px;
+}
+
+.screen-reader-response {
+    margin: 0 0 20px 0;
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+}
+.wpcf7-not-valid-tip {
+    color: brown;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pvdd {
+    position:relative;
+}
+.pvdd .wpcf7-not-valid-tip {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.auto {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+}
+
+.form dt p, .form dd p {
+    margin: 0;
+}
+
+.sent, .wpcf7-response-output,
+.wpcf7-f10-p11-o1-ve-your-message,
+.screen-reader-response ul {
+    display: none;
+}
+
+
+/****************************************
+
+		PRIVACY
+
+*****************************************/
+
+#privacy {
+    display: block;
+    width: 70%;
+    margin: 80px auto;
+}
+
+#privacy h1 {
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+#privacy h2 {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+}
+
+#privacy p {
+    margin: 0 0 20px 0;
+}
+
+#privacy ul {
+    margin: 0 0 20px 0;
+}
+#privacy li {
+    margin: 0 0 6px 30px;
+    list-style-type: disc;
+}
+
+.pvp {
+    font-size: 11px;
+    position: relative;
+    top: -19px;
+    left: 115px;
+}
+
+
+/****************************************
+
+		フッター
+
+*****************************************/
+
+#totop {
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+#totop a {
+    position: relative;
+    top: 0;
+    display: block;
+    width: 32px;
+    line-height: 32px;
+    margin: auto;
+    border-radius: 2px;
+    background: #19448e;
+    transition: 0.2s;
+    color: #fff;
+}
+#totop a:hover {
+    top: -5px;
+}
+
+footer {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 0.83rem;
+}
+
+footer img {
+    margin: 0 10px;
+    height: 24px;
+}
+footer i {
+    position: relative;
+    top: -3px;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fab001;
+}
+
+footer span {
+    display: block;
+    margin: 20px 0 0 0;
+}
+
+
+/* アニメーション設定 */
+.scr-target {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+}
+.scr-target.is-active {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0);
+    transition: 1.5s;
+}
+
+
+/****************************************
+
+		レスポンシブ
+
+*****************************************/
+
+@media (max-width: 1024px) {
+
+    html {
+        font-size: 16px;
+    }
+    
+    header {
+        display: block;
+        text-align: center;
+    }
+    header a.logo {
+        margin: 15px 0 0 0;
+    }
+    
+    header nav {
+        margin: 15px 0 0 0;
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    header nav a {
+        display: inline-block;;
+        margin: 0;
+        padding: 5px 3px;
+    }
+
+    main#index h1, main#profile h1, span.position {
+        position: relative;
+        top: 0;
+        margin: 0 0 20px 0;
+        padding: 0;
+        background: none;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto 50px auto;
+    }
+
+    main#index li a {
+        display: block;
+    }
+    main#index li a .thum {
+        margin: 0;
+    }
+    main#index li a .thum img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+    main#index li a .list {
+        margin: -2px 0 0 0;
+        padding: 0 8px 0 12px;
+    }
+
+    main#index li span {
+        position: relative;
+        top: auto;
+        right: auto;
+        font-size: 0.6rem;
+    }
+    main#index li h2 {
+        padding: 3px 0px 10px 0;
+        font-size: 0.86rem;
+        color: #333;
+        line-height: 1.4;
+    }
+
+    .position {
+        display: none;
+    }
+
+    main#single {
+        padding: 15px 0;
+    }
+    main#single h1 {
+        margin: 0 15px 0 15px;
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 1.5;
+    }
+    main#single h1 span {
+        margin: 8px 0 0 0;
+    }
+    
+    main#single #eyecatch {
+        width: auto;
+        margin: 0;
+    }
+
+    main#single #eyecatch img {
+        margin: 15px 0 10px 0;
+    }
+
+    main#single h2 {
+        margin: 20px 0 15px 0;
+        padding: 25px 0 0 0;
+        font-size: 1.1rem;
+    }
+    main#single h2 i {
+        width: 28px;
+        line-height: 28px;
+        font-size: 1.02rem
+    }
+    main#single h2 strong {
+        display: inline-block;
+    }
+
+    main#single article {
+        margin: 0 15px;
+    }
+
+    main#single p {
+        font-size: 1rem;
+    }
+
+    main#single ul, main#single ol {
+        margin: -10px 0 25px 0px;
+        font-size: 0.90rem;
+    }
+
+    main#single #listicle {
+        margin: 50px 0 0px 0;
+    }
+    
+    #btmnv {
+        display: flex;
+        margin:  0 10px;
+        flex-wrap: wrap;
+        font-size: 0.7rem;
+    }
+    #btmnv a {
+        display: block;
+        flex: 0 0 33.333%;
+        border: 1px solid #eee;
+        box-sizing: border-box;
+        margin: 0 -1px -1px 0;
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    #contact .catch {
+        margin: 0 0 20px 0;
+        font-size: 0.8rem;
+    }
+
+    .form {
+        width: 100%;
+        margin: 0 auto 40px auto;
+        padding: 0 0 20px 0;
+    }
+
+    .form dl {
+        display: block;
+        margin: 15px 15px 0 15px;
+    }
+    .form dt {
+        width: auto;
+    }
+    .form dd {
+        width: auto;
+    }
+    
+    .form input[type='text'], .form input[type='email'], .form input[type='tel'] {
+        width: auto;
+    }
+    .form textarea {
+        width: auto;
+        height: 140px;
+        padding: 10px 0 10px 10px;
+    }
+    
+    .form-actions {
+        margin: -20px 0 0 0;
+    }
+}
