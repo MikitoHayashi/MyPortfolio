@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.png">
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5S6TNTYMR1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-5S6TNTYMR1');
+    </script>
+    <title>プロフィール｜YUBUKI WORKS｜とあるWebクリエイターのポートフォリオ</title>
+</head>
+
+<body>
+    
+  <header class="scr-target">
+    <a href="/" class="logo">
+      <img src="assets/images/logo.png" alt="YUBUKI WORKSのロゴ">
+    </a>
+  </header>
+
+  <nav>
+    <a href="/" class="scr-target">実績</a>
+    <a href="profile.html" class="scr-target">プロフィール</a>
+  </nav>
+  
+  <main>
+   
+    <section>
+      <h1 class="scr-target">
+        PROFILE
+        <!-- span>デザインからSEO対策まで<span -->
+      </h1>
+      <article class="scr-target">
+        <p>
+          ※ 現在作成中です。
+        </p>
+        <p>
+          <a href="https://x.com/yubukiworks" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </p>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="scr-target">
+    <div id="totop" class="scr-target">
+      <a href="#" class="scr-target" aria-label="ページの先頭へ">
+          <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+    <span class="scr-target">&copy; 2025 YUBUKI</span>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(function () {
+  var $demo1 = $('.masonry');   //コンテナとなる要素を指定
+
+  $demo1.imagesLoaded(function(){ //imagesLoadedを使用し、画像が読み込みまれた段階でMasonryの関数を実行させる
+    //Masonryの関数↓
+    $demo1.masonry({              //オプション指定箇所
+      itemSelector: '.item',   //コンテンツを指定
+      columnWidth: 240,           //カラム幅を設定
+      fitWidth: true,             //コンテンツ数に合わせ親の幅を自動調整
+    });
+  });
+});
+  </script>
+</body>
+  
+</html>
