@@ -86,6 +86,7 @@ nav {
 nav a {
     display: inline-block;
     width: 160px;
+    border-radius: 2px;
     line-height: 24px;
     font-size: 0.8rem;
     font-weight: 400;;
@@ -151,6 +152,12 @@ h1 span {
 
 *****************************************/
 
+footer {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 0.83rem;
+}
+
 #totop {
     margin: 0 0 50px 0;
     text-align: center;
@@ -170,12 +177,6 @@ h1 span {
 }
 #totop a:hover {
     top: -5px;
-}
-
-footer {
-    margin: 0 0 20px 0;
-    text-align: center;
-    font-size: 0.83rem;
 }
 
 
@@ -199,180 +200,5 @@ footer {
 
 @media (max-width: 1024px) {
 
-    html {
-        font-size: 16px;
-    }
-    
-    header {
-        display: block;
-        text-align: center;
-    }
-    header a.logo {
-        margin: 15px 0 0 0;
-    }
-    
-    header nav {
-        margin: 15px 0 0 0;
-        padding: 0;
-        font-size: 0.9rem;
-    }
-    header nav a {
-        display: inline-block;;
-        margin: 0;
-        padding: 5px 3px;
-    }
 
-    main#index h1, main#profile h1, span.position {
-        position: relative;
-        top: 0;
-        margin: 0 0 20px 0;
-        padding: 0;
-        background: none;
-        text-align: center;
-        font-size: 0.7rem;
-    }
-
-    main {
-        width: 94%;
-        margin: 20px auto 50px auto;
-    }
-
-    main#index li a {
-        display: block;
-    }
-    main#index li a .thum {
-        margin: 0;
-    }
-    main#index li a .thum img {
-        width: 100%;
-        height: auto;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        border-bottom-left-radius: 0;
-    }
-    main#index li a .list {
-        margin: -2px 0 0 0;
-        padding: 0 8px 0 12px;
-    }
-
-    main#index li span {
-        position: relative;
-        top: auto;
-        right: auto;
-        font-size: 0.6rem;
-    }
-    main#index li h2 {
-        padding: 3px 0px 10px 0;
-        font-size: 0.86rem;
-        color: #333;
-        line-height: 1.4;
-    }
-
-    .position {
-        display: none;
-    }
-
-    main#single {
-        padding: 15px 0;
-    }
-    main#single h1 {
-        margin: 0 15px 0 15px;
-        font-size: 1.2rem;
-        text-align: left;
-        line-height: 1.5;
-    }
-    main#single h1 span {
-        margin: 8px 0 0 0;
-    }
-    
-    main#single #eyecatch {
-        width: auto;
-        margin: 0;
-    }
-
-    main#single #eyecatch img {
-        margin: 15px 0 10px 0;
-    }
-
-    main#single h2 {
-        margin: 20px 0 15px 0;
-        padding: 25px 0 0 0;
-        font-size: 1.1rem;
-    }
-    main#single h2 i {
-        width: 28px;
-        line-height: 28px;
-        font-size: 1.02rem
-    }
-    main#single h2 strong {
-        display: inline-block;
-    }
-
-    main#single article {
-        margin: 0 15px;
-    }
-
-    main#single p {
-        font-size: 1rem;
-    }
-
-    main#single ul, main#single ol {
-        margin: -10px 0 25px 0px;
-        font-size: 0.90rem;
-    }
-
-    main#single #listicle {
-        margin: 50px 0 0px 0;
-    }
-    
-    #btmnv {
-        display: flex;
-        margin:  0 10px;
-        flex-wrap: wrap;
-        font-size: 0.7rem;
-    }
-    #btmnv a {
-        display: block;
-        flex: 0 0 33.333%;
-        border: 1px solid #eee;
-        box-sizing: border-box;
-        margin: 0 -1px -1px 0;
-        padding: 8px 0;
-        text-align: center;
-    }
-
-    #contact .catch {
-        margin: 0 0 20px 0;
-        font-size: 0.8rem;
-    }
-
-    .form {
-        width: 100%;
-        margin: 0 auto 40px auto;
-        padding: 0 0 20px 0;
-    }
-
-    .form dl {
-        display: block;
-        margin: 15px 15px 0 15px;
-    }
-    .form dt {
-        width: auto;
-    }
-    .form dd {
-        width: auto;
-    }
-    
-    .form input[type='text'], .form input[type='email'], .form input[type='tel'] {
-        width: auto;
-    }
-    .form textarea {
-        width: auto;
-        height: 140px;
-        padding: 10px 0 10px 10px;
-    }
-    
-    .form-actions {
-        margin: -20px 0 0 0;
-    }
 }
