@@ -102,6 +102,11 @@ nav a:nth-child(2) {
 nav a:nth-child(3) {
     background: #82027D;
 }
+nav span {
+    font-size: 0.5rem;
+    opacity: 0.4;
+}
+
 
 /****************************************
 
@@ -138,17 +143,58 @@ p {
     margin: 0 0 0 5%;
     text-align: center;
 }
-
 .item {
     display: inline-block;
     width: 200px;
     margin: 10px 10px 10px 15px;
 }
-
 .item img {
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+.own img {
+    width: 100px;
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+        line-height: 1.7;
+    font-size: 1rem;
+}
+
+.profile dt {
+    width: 25%;
+    padding: 20px 20px 20px 10px;
+    border-bottom: 1px dotted #ddd;
+    font-weight: bold;
+}
+.profile dd {
+    width: 65%;
+    padding: 20px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.profile .account i {
+    margin: 0 8px 0 0;
+    font-size: 20px;
 }
 
 /* アニメーション設定 */
@@ -193,6 +239,10 @@ footer {
 }
 #totop a:hover {
     top: -5px;
+}
+
+.prof-footer #totop a {
+    background: #45B2C9;
 }
 
 
