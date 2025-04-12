@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    
+  
   <header class="scr-target">
     <a href="index.html" class="logo">
       <img src="assets/images/logo.png" alt="YUBUKI WORKSのロゴ">
@@ -85,18 +85,26 @@
   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    $(function () {
-  var $demo1 = $('.masonry');   //コンテナとなる要素を指定
+    $(function() {
+      var $grid = $('.masonry').masonry({
+        itemSelector: '.item',
+      });
+      function updateMasonryLayout() {
+        if ($(window).width() <= 768) {
+          $('.item').removeClass('item-pc').addClass('item-sp');
+        } else {
+          $('.item').removeClass('item-sp').addClass('item-pc');
+        }
+        $grid.masonry('reloadItems').masonry('layout');
+      }
 
-  $demo1.imagesLoaded(function(){ //imagesLoadedを使用し、画像が読み込みまれた段階でMasonryの関数を実行させる
-    //Masonryの関数↓
-    $demo1.masonry({              //オプション指定箇所
-      itemSelector: '.item',   //コンテンツを指定
-      columnWidth: 240,           //カラム幅を設定
-      fitWidth: true,             //コンテンツ数に合わせ親の幅を自動調整
+      // 初回ロード時にレイアウトを調整
+      updateMasonryLayout();
+      // ウィンドウのリサイズ時にもレイアウトを調整
+      $(window).on('resize', function() {
+        updateMasonryLayout();
+      });
     });
-  });
-});
   </script>
 </body>
   

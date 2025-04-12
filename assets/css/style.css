@@ -130,13 +130,19 @@ h1 span {
     color: #BBB;
 }
 
+p {
+    margin: 0 0 20px 0;
+}
+
 .masonry {
-    margin: 0 auto;
+    margin: 0 0 0 5%;
+    text-align: center;
 }
 
 .item {
-    width: 220px;
-    margin: 0 0 20px 0;
+    display: inline-block;
+    width: 200px;
+    margin: 10px 10px 10px 15px;
 }
 
 .item img {
@@ -145,8 +151,15 @@ h1 span {
     border-radius: 4px;
 }
 
-p {
-    margin: 0 0 20px 0;
+/* アニメーション設定 */
+.scr-target {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+}
+.scr-target.is-active {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0);
+    transition: 1.5s;
 }
 
 /****************************************
@@ -183,25 +196,21 @@ footer {
 }
 
 
-/* アニメーション設定 */
-.scr-target {
-    opacity: 0;
-    transform: translate3d(0, 40px, 0);
-}
-.scr-target.is-active {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0);
-    transition: 1.5s;
-}
-
-
 /****************************************
 
 		レスポンシブ
 
 *****************************************/
 
-@media (max-width: 1024px) {
-
+@media (max-width: 768px) {
+    .item {
+        width: 40%;
+        margin: 10px 10px 10px 15px;
+    }
+    .item img {
+        margin: 0;
+    }
+    .item-sp {
+    }
 
 }
