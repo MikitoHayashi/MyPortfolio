@@ -1,0 +1,303 @@
+/****************************************
+
+		基本
+
+*****************************************/
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+section , article , footer , aside { display:block; }
+
+* {
+    margin:0;
+	padding:0;
+	border:none;
+	list-style:none;
+	text-decoration:none;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Noto Sans JP',"メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif,"verdana";
+    line-height: 1.7;
+    letter-spacing:0.05em;
+    color: #333;
+}
+
+body {
+	background:#F8FAFD;
+}
+
+main {
+    width: auto;
+    margin: 15px auto 50px auto;
+    text-align: center;
+}
+
+section {
+    margin: 0 0 50px 0;
+}
+
+h1 {
+    margin: 0 0 35px 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+h1 span {
+    display: block;
+    margin: 8px 0 0 0;
+    font-size: 0.7rem;
+    font-weight: normal;
+    color: #BBB;
+}
+
+a {
+    color: #19448e;
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+.pc {
+    display: block;
+}
+.sp {
+    display: none;
+}
+
+.aright {
+    text-align: right;
+}
+.aleft {
+    text-align: left !important;
+}
+.acenter {
+    text-align:center;
+}
+
+/* フェードイン */
+.scr-target {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+}
+.scr-target.is-active {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0);
+    transition: 1.5s;
+}
+
+
+/****************************************
+
+		ヘッダー
+
+*****************************************/
+
+header {
+    padding: 50px 0 40px 0;
+    text-align: center;
+}
+
+header a.logo img {
+    height: 60px;
+}
+
+header a.logo span {
+    display: block;
+    margin: -3px 0 0 0;
+    font-size: 0.5rem;
+    color: #ccc;
+}
+
+nav {
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    width: 160px;
+    border-radius: 2px;
+    line-height: 24px;
+    font-size: 0.8rem;
+    font-weight: 400;;
+    color: #fff;
+}
+
+nav a:nth-child(1) {
+    background: #FFC410;
+}
+nav a:nth-child(2) {
+    background: #45B2C9;
+}
+nav a:nth-child(3) {
+    background: #F3136B;
+}
+nav a:nth-child(4) {
+    background: #82027D;
+}
+nav span {
+    font-size: 0.5rem;
+    opacity: 0.4;
+}
+
+
+/****************************************
+
+		メイン
+
+*****************************************/
+
+/* トップページ */
+
+.masonry {
+    margin: 0 0 0 5%;
+    text-align: center;
+}
+.item {
+    display: inline-block;
+    width: 200px;
+    margin: 10px 10px 10px 15px;
+}
+.item img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* プロフィール */
+.own img {
+    width: 100px;
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+#profile p {
+    width: 70%;
+    margin: 30px auto 20px auto;
+    line-height: 1.6;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+#profile dl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+        line-height: 1.7;
+    font-size: 1rem;
+}
+
+#profile dt {
+    width: 25%;
+    padding: 20px 20px 20px 10px;
+    border-bottom: 1px dotted #ddd;
+    font-weight: bold;
+}
+#profile dd {
+    width: 65%;
+    padding: 20px;
+    border-bottom: 1px dotted #ddd;
+}
+
+#profile .account i {
+    margin: 0 8px 0 0;
+    font-size: 20px;
+}
+
+
+
+/****************************************
+
+		フッター
+
+*****************************************/
+
+footer {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 0.83rem;
+}
+
+#totop {
+    margin: 0 0 50px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+#totop a {
+    position: relative;
+    top: 0;
+    display: block;
+    width: 32px;
+    line-height: 32px;
+    margin: auto;
+    background: #FFC410;
+    transition: 0.2s;
+    color: #fff;
+}
+#totop a:hover {
+    top: -5px;
+}
+
+.prof-footer #totop a {
+    background: #45B2C9;
+}
+
+
+/****************************************
+
+		レスポンシブ
+
+*****************************************/
+
+@media (max-width: 768px) {
+    nav a {
+        width: 47%;
+        margin: 0 0 5px 0;
+        line-height: 30px;
+    }
+    
+    .item {
+        width: 40%;
+        margin: 10px 10px 10px 15px;
+    }
+    .item img {
+        margin: 0;
+    }
+
+    #profile p {
+        width: 90%;
+        margin: 20px auto 10px auto;
+    }
+
+    #profile dl {
+        display: block;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    #profile dt {
+        width: auto;
+        padding: 10px 0 0 0;
+        border-bottom: none;
+    }
+    #profile dd {
+        width: auto;
+        padding: 0 0 10px 15px;
+}
+
+#profile .account i {
+    margin: 0 8px 0 0;
+    font-size: 20px;
+}
+    
+
+}
