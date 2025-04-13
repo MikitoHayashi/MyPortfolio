@@ -7,16 +7,22 @@
 
 <body>  
   
-  <header class="scr-target">
+  <header>
     <a href="/" class="logo">
       <img src="/wp-content/themes/yubukiworks/assets/images/logo.png" alt="YUBUKI WORKSのロゴ">
     </a>
   </header>
 
+  <div id="nv_home">
 <?php get_template_part( 'parts/navi' ); ?>
+  </div>
   
   <main id="home">
    
+    <p class="note scr-target">
+      ※ 各実績の詳細は作成中です。
+    </p>
+    
     <section>
       <h1 class="scr-target">
         Web制作

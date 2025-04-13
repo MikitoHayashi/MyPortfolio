@@ -96,7 +96,7 @@ p {
 *****************************************/
 
 header {
-    padding: 50px 0 40px 0;
+    padding: 30px 0 40px 0;
     text-align: center;
 }
 
@@ -143,6 +143,15 @@ nav span {
     opacity: 0.4;
 }
 
+#nv_home nav a:nth-child(1):after,
+#nv_profile nav a:nth-child(3):after,
+#nv_blog nav a:nth-child(2):after,
+#nv_contact nav a:nth-child(4):after
+{
+    content: ' *';
+    font-size: 16px;
+}
+
 
 /****************************************
 
@@ -151,7 +160,10 @@ nav span {
 *****************************************/
 
 /* トップページ */
-
+.note {
+    font-size: 0.8rem;
+    margin: 40px 0;
+}
 .masonry {
     margin: 0 0 0 5%;
     text-align: center;
@@ -177,7 +189,7 @@ nav span {
 }
 
 #profile p {
-    width: 70%;
+    width: 50%;
     margin: 30px auto 20px auto;
     line-height: 1.6;
     text-align: left;
