@@ -2,12 +2,12 @@
 <html lang="ja">
 <head>
 <?php get_header(); ?>
-  <title>プロフィール｜YUBUKI WORKS</title>
+  <title>UIデザイナーのプロフィール｜YUBUKI WORKS</title>
 </head>
 
 <body>
   
-  <header class="scr-target">
+  <header>
     <a href="/" class="logo">
       <img src="/wp-content/themes/yubukiworks/assets/images/logo.png" alt="YUBUKI WORKSのロゴ">
     </a>

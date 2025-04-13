@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <?php get_header(); ?>
-  <title>ブログ｜YUBUKI WORKS</title>
+  <title>ブログ記事一覧｜YUBUKI WORKS</title>
 </head>
 
 <body>

@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <?php get_header(); ?>
-  <title>YUBUKI WORKS｜とあるWebデザイナーのポートフォリオ</title>
+  <title>YUBUKI WORKS｜Web制作をワンストップ対応｜UIデザイン・SEOまでお任せ</title>
 </head>
 
 <body>  
